@@ -3,10 +3,45 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
     <title>Lecteur audio</title>
   </head>
   <body>
+    <div class="audio-container">
+      <audio src="data/music/Aurora.mp3"></audio>
+      <div class="cover">
+        <img src="data/cover/Aurora.png" alt="cover musique" />
+      </div>
+      <div class="content">
+        <div class="data-music">
+          <h1 class="title">Bolar</h1>
+          <h2 class="author">2pac</h2>
+        </div>
+        <div class="juice-bar">
+          <div class="juice"></div>
+        </div>
+        <div class="indicator-duration">
+          <span class="moment-duration">0:00</span>
+          <span class="total-duration">5:38</span>
+        </div>
+        <div class="controls">
+          <button class="prev-btn"><ion-icon name="play-back"></ion-icon></button>
+          <button class="play-pause-btn"><ion-icon name="play"></ion-icon></button>
+          <button class="next-btn"><ion-icon name="play-forward"></ion-icon></button>
+        </div>
+      </div>
+    </div>
     <script src="./dist/app.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
   </body>
 </html>
